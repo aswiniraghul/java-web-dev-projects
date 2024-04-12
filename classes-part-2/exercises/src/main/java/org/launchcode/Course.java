@@ -13,5 +13,4 @@ public class Course {
 
     // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
     //  Course objects equal.
-
 }
