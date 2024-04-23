@@ -7,7 +7,7 @@ public abstract class Ingredient {
     private double cost;
     private ArrayList<String> allergens;
 
-    public Ingredient(String aName, double aCost, ArrayList<String> someAllergens){
+    public Ingredient(String aName, double aCost, ArrayList<String> someAllergens) {
         name = aName;
         cost = aCost;
         allergens = someAllergens;
@@ -42,5 +42,13 @@ public abstract class Ingredient {
         return "Name: " + name + "\n" +
                 "Cost: $" + cost + "\n" +
                 "Allergens: " + allergens + "\n";
+    }
+
+    public static void listItems(ArrayList items) {
+        Class classType = items.get(0).getClass();
+        System.out.println("\n" + classType.getSimpleName().toUpperCase() + "S:");
+        for (Object flavor : items) {
+            System.out.println(flavor.toString());
+        }
     }
 }
