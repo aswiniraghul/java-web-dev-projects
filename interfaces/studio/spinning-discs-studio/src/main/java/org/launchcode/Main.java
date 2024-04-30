@@ -11,7 +11,7 @@ public class Main {
         dvd.spinDisc();
 
         cd.readData();
-        dvd.readData();
+        dvd.readData();//breakpoint check
 
         System.out.println(cd.writeData(275));
         System.out.println(dvd.writeData(8000));
